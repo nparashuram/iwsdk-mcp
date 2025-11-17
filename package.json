@@ -1,0 +1,37 @@
+{
+  "name": "iwsdk-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for Immersive Web SDK",
+  "type": "module",
+  "main": "build/index.js",
+  "bin": {
+    "iwsdk-mcp": "build/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepare-rag": "tsx scripts/setup-cache.ts",
+    "inspector": "node --experimental-modules build/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "immersive-web-sdk",
+    "webxr",
+    "iwsdk",
+    "vr",
+    "ar"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.7.0",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,17 @@
+node_modules/
+build/
+dist/
+*.log
+.DS_Store
+.env
+.vscode/
+.idea/
+
+.claude/
+TODO.md
+
+# Generated cache files (run npm run setup-cache to generate)
+cache/
+
+# Telemetry
+telemetry.jsonl
